@@ -21,7 +21,11 @@ make setup
 make run
 ```
 
-## Deploy to otype.de
+## Deploy
+
+This will deploy to:
+- [otype.github.io](https://otype.github.io) and
+- [otype.de](https://otype.de)
 
 Build the site, first:
 
@@ -34,3 +38,9 @@ Then, deploy:
 ```
 make deploy
 ```
+
+Deploy will implicitly ...
+- checkout branch `public`,
+- rebase `main`,
+- push to `public`
+- and `scp` all files to Uberspace.
