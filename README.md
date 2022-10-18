@@ -21,16 +21,26 @@ make setup
 make run
 ```
 
-## Deploy
+## Release and deploy
 
 This will deploy to:
 - [otype.github.io](https://otype.github.io) and
 - [otype.de](https://otype.de)
 
-Build the site, first:
+Assumption:
+You have made all changes and pushed to `main`.
+
+Build the site:
 
 ```
 make
+```
+
+Now, create a release (pick a new tag version):
+
+E.g.
+```
+gh release create v1.2 --generate-notes
 ```
 
 Then, deploy:
