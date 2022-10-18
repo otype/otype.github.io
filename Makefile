@@ -10,12 +10,8 @@ clean:
 	rm -rf docs
 	rm -f *~1~
 
-deploy:
-	git checkout public
-	make build
-	git rebase main
-	git push
-	scp -r docs/* cressida.uberspace.de:sites/otype.de/
+deploy: clean
+	git checkout public && make build && git rebase main && git push && git checkout main && scp -r docs/* cressida.uberspace.de:sites/otype.de/
 
 run:
 	hugo server
