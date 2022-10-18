@@ -1,0 +1,68 @@
+## Basic Configuration
+
+baseURL      = "https://otype.de/"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Hans-Gunther Schmidt"
+title = "Hans-Gunther Schmidt - otype"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+# disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+# googleAnalytics = "UA-113480627-1"
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "Hans-Gunther Schmidt"
+intro = "I love to code. And I love Berlin."
+description = "Fn enthusiast. *nix believer. Director of Engineering at [Meltwater](http://underthehood.meltwater.com/)."
+authorimage = "hans_small.png"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Hans loves code"
+keywords = "blog,otype,hans,developer,engineering manager,manager,rust,golang,unix,linux,functional"
+
+## Social Accounts
+[params.social]
+github = "otype"
+#instagram = "<username>"
+#xing = "<username>"
+linkedin = "hgschmidt"
+twitter = "otype"
+#google = "hans@otype.de"
+stackoverflow = "2806914/hans-gunther-schmidt"
+email = "hans@otype.de"
+
+## Extras
+[params.extra]
+copyright = "© 2012-2022. Hans-Gunther Schmidt. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+poweredby = true
+highlightjs = true
+
+## Main Menu
+[[menu.main]]
+# [[menu.main]]
+#     name = "blog"
+#     weight = 100
+#     identifier = "blog"
+#     url = "/posts/"
+# [[menu.main]]
+#     name = "about"
+#     identifier = "about"
+#     weight = 200
+#     url = "/about/"
+# [[menu.main]]
+#     name = "coderag"
+#     identifier = "coderag"
+#     weight = 300
+#     url = "/coderag/"
