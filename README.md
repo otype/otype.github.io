@@ -20,14 +20,15 @@ The site is based on [Hugo](https://gohugo.io/) and the [hugo-goa](https://githu
 
 ## Getting started
 
-#### Requirements
+### Requirements
 
 - [Golang](https://go.dev/), installed e.g. via [goenv](https://github.com/syndbg/goenv)
 - [Hugo](https://gohugo.io/)
+- [gh](https://cli.github.com/)
 
-#### Development setup
+### Development setup
 
-1. **Clone this repo** Assuming you are using [gh](https://cli.github.com/)).
+1. **Clone this repo.**
 ```console
 $ gh repo clone otype/otype.github.io
 ```
@@ -44,7 +45,7 @@ make setup
 $ make run
 ```
 
-#### Release and deploy a new version
+### Release and deploy a new version
 
 1. **Commit and push all changes to `main`**
 
