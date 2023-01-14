@@ -28,18 +28,18 @@ The site is based on [Hugo](https://gohugo.io/) and the [hugo-goa](https://githu
 
 ### Development setup
 
-1. **Clone this repo.**
+1. Clone this repo.
 ```console
 $ gh repo clone otype/otype.github.io
 ```
 
-2. **Run setup**
+2. Run setup.
 
 ```console
-make setup
+$ make setup
 ````
 
-3. **Run server**
+3. Run server.
 
 ```console
 $ make run
@@ -47,21 +47,21 @@ $ make run
 
 ### Release and deploy a new version
 
-1. **Commit and push all changes to `main`**
+1. Commit and push all changes to `main`.
 
-2. **Build the site** Default `Makefile` target will run `hugo`.
+2. Build the site. Default `Makefile` target will run `hugo`.
 
 ```console
 $ make
 ```
 
-3. **Create a release**. Pick a new `tag` version. If unclear check the existing [tags](https://github.com/otype/otype.github.io/tags) in this repository.
+3. Create a release. Pick a new `tag` version. If unclear check the existing [tags](https://github.com/otype/otype.github.io/tags) in this repository.
 
 ```console
 $ gh release create v1.2 --generate-notes
 ```
 
-4. **Deploy**. This automatically updates [otype.github.io](https://otype.github.io) and copies all files to [otype.de](https://otype.de).
+4. Deploy. This automatically updates [otype.github.io](https://otype.github.io) and copies all files to [otype.de](https://otype.de).
 
 ```console
 $ make deploy
