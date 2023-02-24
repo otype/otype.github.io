@@ -11,7 +11,7 @@ clean:
 	rm -f *~1~
 
 deploy: clean
-	git checkout public && make build && git rebase main && git push && git checkout main && scp -r docs/* cressida.uberspace.de:sites/otype.de/
+	git checkout public && make build && git rebase main && git push --force && git checkout main && scp -r docs/* cressida.uberspace.de:sites/otype.de/
 
 release:
 	echo 'Run `gh release create v<tag_version> --generate-notes`'
