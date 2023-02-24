@@ -23,7 +23,7 @@ enableRobotsTXT = true
 [params]
 author = "Hans-Gunther Schmidt"
 intro = "I love to code. And I love Berlin."
-description = "Fn enthusiast. *nix believer. Director of Engineering at [Meltwater](http://underthehood.meltwater.com/)."
+description = "Fn enthusiast. *nix believer. I work at [Meltwater](http://underthehood.meltwater.com/)."
 authorimage = "hans_small.png"
 dateformat = "Jan 2, 2006"
 
@@ -45,7 +45,7 @@ email = "hans@otype.de"
 
 ## Extras
 [params.extra]
-copyright = "© 2012-2022. Hans-Gunther Schmidt. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+copyright = "© 2012-2023. Hans-Gunther Schmidt. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
 poweredby = true
 highlightjs = true
 
