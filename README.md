@@ -16,7 +16,7 @@ This repository contains all files for my sites (identical copies):
 - [otype.github.io](https://otype.github.io)
 - [otype.de](https://otype.de)
 
-The site is based on [Hugo](https://gohugo.io/) and the [hugo-goa](https://github.com/kaapiandcode/hugo-goa) theme.
+The site is based on [Hugo](https://gohugo.io/) and the [radition-free-hugo-theme](https://github.com/radity/raditian-free-hugo-theme) theme.
 
 ## Getting started
 
