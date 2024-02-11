@@ -6,15 +6,14 @@
     <description>Recent content in Posts on Hans-Gunther Schmidt - otype</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 02 Feb 2018 22:50:21 +0100</lastBuildDate><atom:link href="https://otype.de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Feb 2018 22:50:21 +0100</lastBuildDate>
+    <atom:link href="https://otype.de/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>https://otype.de/posts/my-first-post/</link>
       <pubDate>Fri, 02 Feb 2018 22:50:21 +0100</pubDate>
-      
       <guid>https://otype.de/posts/my-first-post/</guid>
       <description>some text</description>
     </item>
-    
   </channel>
 </rss>
