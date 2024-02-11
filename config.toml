@@ -1,18 +1,18 @@
 ## Basic Configuration
 
 baseURL      = "https://otype.de/"
-builddrafts = false
+builddrafts  = false
 canonifyurls = false
 languageCode = "en-US"
 
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
+contentdir   = "content"
+layoutdir    = "layouts"
+publishdir   = "public"
 
-author = "Hans-Gunther Schmidt"
-title = "Hans-Gunther Schmidt - otype"
+author       = "Hans-Gunther Schmidt"
+title        = "Hans-Gunther Schmidt - otype"
 
-theme = "hugo-goa"
+theme        = "hugo-goa"
 
 ## Hugo Built-in Features
 # disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
@@ -21,33 +21,33 @@ enableRobotsTXT = true
 
 ## Site Settings
 [params]
-author = "Hans-Gunther Schmidt"
-intro = "I love to code. And I love Berlin."
-description = "Fn enthusiast. *nix believer. I work at [Meltwater](http://underthehood.meltwater.com/)."
-authorimage = "hans_small.png"
-dateformat = "Jan 2, 2006"
+  author = "Hans-Gunther Schmidt"
+  intro = "I love to code. And I love Berlin."
+  description = "Fn enthusiast. *nix believer. I work at [Meltwater](http://underthehood.meltwater.com/)."
+  authorimage = "hans_small.png"
+  dateformat = "Jan 2, 2006"
 
-## Site Meta Settings
-[params.meta]
-description = "Hans loves code"
-keywords = "blog,otype,hans,developer,engineering manager,manager,rust,golang,unix,linux,functional"
+  ## Site Meta Settings
+  [params.meta]
+    description = "Hans loves code"
+    keywords = "blog,otype,hans,developer,engineering manager,manager,rust,golang,unix,linux,functional"
 
-## Social Accounts
-[params.social]
-github = "otype"
-#instagram = "<username>"
-#xing = "<username>"
-linkedin = "hgschmidt"
-twitter = "otype"
-#google = "hans@otype.de"
-stackoverflow = "2806914/hans-gunther-schmidt"
-email = "hans@otype.de"
+  ## Social Accounts
+  [params.social]
+    github = "otype"
+    #instagram = "<username>"
+    #xing = "<username>"
+    linkedin = "hgschmidt"
+    twitter = "otype"
+    #google = "hans@otype.de"
+    stackoverflow = "2806914/hans-gunther-schmidt"
+    email = "hans@otype.de"
 
-## Extras
-[params.extra]
-copyright = "© 2012-2023. Hans-Gunther Schmidt. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
-poweredby = true
-highlightjs = true
+  ## Extras
+  [params.extra]
+    copyright = "© 2012-2023. Hans-Gunther Schmidt. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+    poweredby = true
+    highlightjs = true
 
 ## Main Menu
 [[menu.main]]
