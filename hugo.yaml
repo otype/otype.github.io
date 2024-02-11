@@ -1,0 +1,37 @@
+baseURL: http://otype.de/
+title: Hans-Gunther Schmidt - otype
+theme: hugo-goa
+languageCode: en-us
+
+enableRobotsTXT: true
+contentdir: content
+layoutdir: layouts
+publishdir: public
+
+params:
+  contact:
+    email: hans@otype.de
+    author: Hans-Gunther Schmidt
+    intro: I love to code. And I love Berlin.
+    description: Fn enthusiast. *nix believer. I work at [Meltwater](http://underthehood.meltwater.com/).
+    authorimage: hans_small.png
+    dateformat: Jan 2, 2006
+
+  meta:
+    description: Hans loves code
+    keywords: blog,otype,hans,developer,engineering manager,manager,rust,golang,unix,linux,functional
+
+  social:
+    github: otype
+    #instagram = "<username>"
+    #xing = "<username>"
+    linkedin: hgschmidt
+    twitter: otype
+    #google = "hans@otype.de"
+    stackoverflow: 2806914/hans-gunther-schmidt
+    email: hans@otype.de
+
+  extra:
+    copyright: © 2012-2023. Hans-Gunther Schmidt. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/).
+    poweredby: true
+    highlightjs: true
