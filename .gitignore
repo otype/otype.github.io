@@ -47,3 +47,4 @@ hugo.linux
 
 # Custom ignores
 /.go-version
+/themes/hugo-goa/
