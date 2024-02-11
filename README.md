@@ -1,3 +1,5 @@
+[![Deploy Hugo site to Pages](https://github.com/otype/otype.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/otype/otype.github.io/actions/workflows/hugo.yaml)
+
 <p align="center">
 	<img src="/images/otype_site.png" alt="otype Site"/>
 </p>
