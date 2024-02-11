@@ -1,17 +1,8 @@
-[![Deploy Hugo site to Pages](https://github.com/otype/otype.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/otype/otype.github.io/actions/workflows/hugo.yaml)
-
 <p align="center">
 	<img src="/images/otype_site.png" alt="otype Site"/>
 </p>
 
-<p>
-	<a href="https://github.com/otype/otype.github.io/commits/master">
-	<img src="https://img.shields.io/github/last-commit/otype/otype.github.io.svg?style=flat-square&logo=github&logoColor=white" alt="GitHub last commit">
-    <a href="https://github.com/otype/otype.github.io/issues">
-    <img src="https://img.shields.io/github/issues-raw/otype/otype.github.io.svg?style=flat-square&logo=github&logoColor=white" alt="GitHub issues">
-    <a href="https://github.com/otype/otype.github.io/pulls">
-    <img src="https://img.shields.io/github/issues-pr-raw/otype/otype.github.io.svg?style=flat-square&logo=github&logoColor=white" alt="GitHub pull requests">
-</p>
+[![Deploy Hugo site to Pages](https://github.com/otype/otype.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/otype/otype.github.io/actions/workflows/hugo.yaml)
 
 This repository contains all files for my sites (identical copies):
 
