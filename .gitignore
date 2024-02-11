@@ -46,5 +46,5 @@ hugo.linux
 # End of https://www.toptal.com/developers/gitignore/api/go,hugo
 
 # Custom ignores
-/themes/hugo-goa/
+/themes/**
 /.go-version
