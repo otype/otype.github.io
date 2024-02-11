@@ -33,5 +33,5 @@ params:
 
   extra:
     copyright: © 2012-2023. Hans-Gunther Schmidt. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/).
-    poweredby: true
+    poweredby: false
     highlightjs: true

@@ -16,7 +16,7 @@ deploy: clean
 release:
 	echo 'Run `gh release create v<tag_version> --generate-notes`'
 run:
-	hugo server
+	hugo server -D
 
 setup:
 	git clone https://github.com/shenoybr/hugo-goa themes/hugo-goa
