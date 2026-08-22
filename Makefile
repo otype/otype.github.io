@@ -3,7 +3,7 @@
 all: build;
 
 build: clean
-	hugo -D -d docs
+	hugo -D
 
 clean:
 	rm -rf public
@@ -11,7 +11,7 @@ clean:
 	rm -f *~1~
 
 deploy: clean
-	git checkout public && make build && git rebase main && git push --force && git checkout main && scp -r docs/* cressida.uberspace.de:sites/otype.de/
+	git push origin main
 
 release:
 	echo 'Run `gh release create v<tag_version> --generate-notes`'
