@@ -1,0 +1,20 @@
+{{ partial "sub_footer.html" . }}
+</div>
+
+{{ with .Site.Params.extra }}
+{{ if .highlightjs }}
+<script src="{{ "vendor/highlightjs/highlight.min.js" | absURL }}"></script>
+{{ range .highlightjslanguages }}
+<script src="{{ printf "vendor/highlightjs/languages/%s.min.js" . | absURL }}"></script>
+{{ end }}
+
+<script>hljs.highlightAll();</script>
+{{ end }}
+{{ end }}
+
+{{ template "_internal/google_analytics.html" . }}
+<script src="{{ "vendor/bootstrap/bootstrap.bundle.min.js" | absURL }}"></script>
+<script src="/js/custom.js"></script>
+</body>
+
+</html>
