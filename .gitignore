@@ -48,3 +48,4 @@ hugo.linux
 # Custom ignores
 #/themes/hugo-goa/
 /.go-version
+/docs/

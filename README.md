@@ -47,24 +47,16 @@ $ make run
 
 ### Release and deploy a new version
 
-1. Commit and push all changes to `main`.
+Every push to the `main` branch automatically triggers the GitHub Actions workflow to build and deploy the site to GitHub Pages.
 
-2. Build the site. Default `Makefile` target will run `hugo`.
+1. Stage and commit your changes:
+   ```console
+   $ git add .
+   $ git commit -m "Add new post"
+   ```
 
-```console
-$ make
-```
-
-3. Create a release. Pick a new `tag` version. If unclear check the existing [tags](https://github.com/otype/otype.github.io/tags) in this repository.
-
-```console
-$ gh release create v1.2 --generate-notes
-```
-
-4. Deploy. This automatically updates [otype.github.io](https://otype.github.io) and copies all files to [otype.de](https://otype.de).
-
-```console
-$ make deploy
-```
-
-The Makefile `deploy` target will implicitly checkout branch `public`, rebase `main`, push to `public` and `scp` all files to Uberspace.
+2. Deploy by pushing to `main`:
+   ```console
+   $ make deploy
+   ```
+   *(or simply run `git push origin main`)*
