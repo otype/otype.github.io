@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        {{ with .Site.Params.meta.description }}
+        <meta name="description" content="{{ . }}">{{ end }}
+        {{ with .Site.Params.meta.keywords }}
+        <meta name="keywords" content="{{.}}">{{ end }}
+
+        <title>
+            {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }} {{ if eq $url "" }} {{ .Site.Title }}
+            {{ else }} {{ .Site.Title }} - {{ .Title }} {{ end }}
+        </title>
+
+        {{ hugo.Generator }}
+
+        {{ range .AlternativeOutputFormats -}}
+        <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+        {{ end -}}
+
+        {{ if .Site.Params.extra.highlightjs }}
+        <link rel="stylesheet" href="{{ "vendor/highlightjs/styles/default.min.css" | absURL }}">
+        {{ end }}
+
+        <!-- Lato, Roboto, Roboto Slab, Bootstrap, Font Awesome, and highlight.js are all
+             self-hosted (see static/fonts/ and static/vendor/) instead of loaded from
+             Google Fonts / jsdelivr / cdnjs, to avoid sending visitor IPs to third parties
+             on every page load. -->
+        <link rel="stylesheet" href="{{ "vendor/bootstrap/bootstrap.min.css" | absURL }}">
+        <link rel="stylesheet" href="{{ "vendor/fontawesome/css/all.min.css" | absURL }}">
+        <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+        <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="theme-color" content="#ffffff">
+        {{- with .OutputFormats.Get "RSS" -}}
+        <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}" />
+        <link rel="alternate" type="application/json" title="{{ $.Site.Title }}" href="{{ "feed.json" | absURL }}" />
+        <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
+        {{- end -}}
+
+    </head>
+
+    <body lang="{{ .Site.LanguageCode }}">
+        <div class="container my-auto">
