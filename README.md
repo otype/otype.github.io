@@ -58,7 +58,7 @@ $ git clone --recurse-submodules https://github.com/otype/otype.github.io.git
 $ cd otype.github.io
 ```
 
-If you cloned without it, fetch the theme afterwards:
+If you cloned without it, fetch the theme afterwards (`make setup` runs the same command):
 
 ```console
 $ git submodule update --init
@@ -101,6 +101,3 @@ $ git submodule update --remote themes/hugo-goa
 ```
 
 The self-hosted libraries have no update automation. Re-check them against the "Where to check" links in [`VENDORED_ASSETS.md`](VENDORED_ASSETS.md) every 6 to 12 months, or sooner when a CVE for one of them is announced.
-
-> [!NOTE]
-> The Makefile targets `setup` and `deploy` are older shortcuts that no longer match this workflow. `make setup` clones the theme into a folder the submodule already owns, so use `git submodule update --init` instead. `make deploy` pushes straight to `main`, so use a pull request instead.
